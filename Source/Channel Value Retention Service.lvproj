@@ -11,13 +11,13 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="SubVIs" Type="Folder">
-			<Item Name="Are Channels Valid.vi" Type="VI" URL="../SubVIs/Are Channels Valid.vi"/>
-			<Item Name="Filter FGV.vi" Type="VI" URL="../SubVIs/Filter FGV.vi"/>
-			<Item Name="Get Config Path.vi" Type="VI" URL="../SubVIs/Get Config Path.vi"/>
-			<Item Name="Initialize Settings from File.vi" Type="VI" URL="../SubVIs/Initialize Settings from File.vi"/>
-			<Item Name="Launch Channel Selection Dialog.vi" Type="VI" URL="../SubVIs/Launch Channel Selection Dialog.vi"/>
-			<Item Name="Set Default Channel Values.vi" Type="VI" URL="../SubVIs/Set Default Channel Values.vi"/>
-			<Item Name="Write Default Channels to File.vi" Type="VI" URL="../SubVIs/Write Default Channels to File.vi"/>
+			<Item Name="Filter FGV.vi" Type="VI" URL="../Filter FGV.vi"/>
+			<Item Name="Get Config Path.vi" Type="VI" URL="../Get Config Path.vi"/>
+			<Item Name="Initialize Settings from File.vi" Type="VI" URL="../Initialize Settings from File.vi"/>
+			<Item Name="Launch Channel Selection Dialog.vi" Type="VI" URL="../Launch Channel Selection Dialog.vi"/>
+			<Item Name="Set Default Channel Values.vi" Type="VI" URL="../Set Default Channel Values.vi"/>
+			<Item Name="Sort Valid Channels.vi" Type="VI" URL="../Sort Valid Channels.vi"/>
+			<Item Name="Write Default Channels to File.vi" Type="VI" URL="../Write Default Channels to File.vi"/>
 		</Item>
 		<Item Name="Channel Value Retention Service Main.vi" Type="VI" URL="../Channel Value Retention Service Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -66,36 +66,26 @@
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeTypedefs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../NI_AB_PROJECTNAME.llb</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Built/NI_AB_PROJECTNAME.llb</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{42483CEA-2AA7-478E-802C-3DFDC3FB19A2}</Property>
-				<Property Name="Bld_version.build" Type="Int">48</Property>
+				<Property Name="Bld_version.build" Type="Int">50</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
-				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME.llb</Property>
-				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].path" Type="Path">../Built/NI_AB_PROJECTNAME.llb</Property>
 				<Property Name="Destination[0].type" Type="Str">LLB</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A12C75E5-DC26-4B4C-9BB1-D2E2EF07C927}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B73AE043-434D-4DDB-8965-04FAB419050E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Channel Value Retention Service Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[1].VI.LLBtopLevel" Type="Bool">true</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/SubVIs/Initialize Settings from File.vi</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/My Computer/SubVIs/Launch Channel Selection Dialog.vi</Property>
-				<Property Name="Source[3].type" Type="Str">VI</Property>
-				<Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/My Computer/SubVIs/Write Default Channels to File.vi</Property>
-				<Property Name="Source[4].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
 		</Item>
 	</Item>
